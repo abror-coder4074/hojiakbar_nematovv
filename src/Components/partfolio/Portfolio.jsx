@@ -1,4 +1,4 @@
-import "./Portfolio.css";
+import "./portfolio.css";
 import savlat from "../../../public/savlatmebel.jpg";
 import asialogis from "../../../public/asialogistics.jpg";
 import mychoice from "../../../public/mychoice.jpg";
