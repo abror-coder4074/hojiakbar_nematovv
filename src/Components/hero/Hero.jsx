@@ -1,4 +1,4 @@
-import "./Hero.css";
+import "./hero.css";
 import heroimg from "../../../public/abrik.jpg"
 
 export default function Hero() {
