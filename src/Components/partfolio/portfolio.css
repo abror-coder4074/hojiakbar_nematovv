@@ -1,0 +1,81 @@
+section.portfolio {
+  padding: 48px 0;
+}
+
+.portfolio-title {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.portfolio-subtitle {
+  color: var(--muted);
+  margin-top: 8px;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.case {
+  background: #655d5d0d;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.case:hover {
+  transform: translateY(-5px);
+}
+
+.case .thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.case .thumb img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100px; /* dumaloq */
+}
+.thumb{
+  background: rgba(128, 128, 128, 0.141);
+}
+
+.case .info {
+  padding: 14px;
+}
+
+.case .title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.case .desc {
+  color: var(--muted);
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+/* 📱 Media: tablet */
+@media (max-width: 992px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 📱 Media: telefon */
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
